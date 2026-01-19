@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emergent Travel – Karnataka Trip Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Plan Your Karnataka Trip Effortlessly</h1>
+      <p>Select your district, days, and budget to get a complete travel plan!</p>
+      <button onclick="scrollToDemo()">Start Planning</button>
+    </div>
+  </header>
+
+  <!-- DEMO SECTION -->
+  <section class="section" id="demo">
+    <h2>Trip Planner Demo</h2>
+
+    <div class="form-container">
+      <div class="form-card">
+        <label>District</label>
+        <select id="district"></select>
+
+        <label>Days</label>
+        <select id="days">
+          <option value="">Select Days</option>
+          <option value="1">1 Day</option>
+          <option value="2">2 Days</option>
+          <option value="3">3 Days</option>
+        </select>
+
+        <label>Budget</label>
+        <select id="budget">
+          <option value="">Select Budget</option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+
+        <button onclick="generatePlan()">Generate Plan</button>
+      </div>
+
+      <div class="output-card" id="output">
+        <p>Select options and click "Generate Plan" to see your itinerary.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Emergent Travel – Demo Version</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
